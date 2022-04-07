@@ -3,7 +3,7 @@ import Reviews from '../../components/Reviews';
 import Ratings from '../../components/Ratings';
 import { useRequest } from 'ahooks';
 import { getReview } from './service';
-import { ReviewQueryParams, ReviewProp } from './data';
+import type { ReviewQueryParams, ReviewProp } from './data';
 
 const LIMIT = 5;
 const DEFAULT_SHOW_COUNT = 3;

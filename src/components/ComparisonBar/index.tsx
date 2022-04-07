@@ -3,7 +3,6 @@ import styles from './index.module.scss';
 
 export interface ComparisonBarProps {
   title: string;
-  // activeLabel: number;
   labels: string[];
 }
 
@@ -15,7 +14,7 @@ const ComparisonBar: React.FC<ComparisonBarProps> = (props) => {
         <strong>{title}</strong>
       </div>
       <div className={styles.bar}>
-        <div className={styles.indicator}></div>
+        <div className={styles.indicator} />
       </div>
       <div className={styles.labels}>
         {labels.map((item) => {
