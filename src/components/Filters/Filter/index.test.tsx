@@ -1,4 +1,4 @@
-import Filter from './Filter';
+import Filter from './index';
 import * as ReactDOMClient from 'react-dom/client';
 
 it('renders without crashing', () => {

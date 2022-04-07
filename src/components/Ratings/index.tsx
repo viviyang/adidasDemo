@@ -21,7 +21,7 @@ const PrimarySubRating: React.FC<PrimarySubRatingProps> = (props) => {
           <path
             d="M9.5 14.26l5.86 4.26-2.23-6.91L19 7.35h-7.25L9.5.48 7.25 7.35H0l5.87 4.26-2.24 6.91z"
             fill="currentColor"
-          ></path>
+          />
         </svg>
         <label className={styles.label}>{rate}</label>
       </div>
@@ -51,7 +51,7 @@ const Ratings: React.FC<RatingsProps> = (props) => {
           <PrimarySubRating rate="4.0" name="comfort" />
           <PrimarySubRating rate="4.4" name="quality" />
         </div>
-        <div className={styles.sectionDivider}></div>
+        <div className={styles.sectionDivider} />
         <div className="gl-vspace-bpall-small">
           <ComparisonBar title="Size" labels={['Zu klein', 'perfect', 'Zu groß']} />
           <ComparisonBar title="Width" labels={['Zu schmal', 'perfect', 'Zu breit']} />

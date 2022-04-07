@@ -1,4 +1,4 @@
-import Star from './Star';
+import Star from './index';
 import * as ReactDOMClient from 'react-dom/client';
 
 it('renders without crashing', () => {
