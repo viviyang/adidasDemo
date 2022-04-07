@@ -1,7 +1,7 @@
 import React from 'react';
 import styles from './index.module.scss';
 import Review from './Review';
-import { ReviewProp } from '../../pages/rateReview/data';
+import type { ReviewProp } from '../../pages/rateReview/data';
 import { DEFAULT_SHOW_COUNT } from '../../pages/rateReview';
 import Dropdown from '../Dropdown';
 
