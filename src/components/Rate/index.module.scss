@@ -1,0 +1,19 @@
+.stars{
+    display: inline-flex;
+    font-size: 20px;
+    color: var(--gl-color-icon);
+}
+.item{
+    position: relative;
+    margin-right: 5px;
+}
+.mask{
+    overflow: hidden;
+    position: absolute;
+}
+.star{
+    height: 20px;
+    width: 20px;
+    fill: #000;
+    color: #000;
+}

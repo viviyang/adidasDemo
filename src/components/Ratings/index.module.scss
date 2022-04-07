@@ -1,0 +1,65 @@
+.rates{
+    width: calc((1 / 3) * 100% - 20px);
+}
+.header{
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+    margin-bottom: 10px;    
+}
+.starRating{
+    display: flex;
+    width: 100%;
+    height: 70px;
+    justify-content: center;
+    align-items: center;
+    background-color: #2ada71;
+    .text{
+        padding-right: 5px;
+        margin-bottom: 0;
+        font-family: "AdineuePRO",Helvetica,Arial,sans-serif;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 30px;
+        line-height: 28px;
+        letter-spacing: 1.5px;
+        text-transform: uppercase;
+    }
+}
+.subRatings{
+    margin-top:var(--gl-spacing-0150);
+}
+.primarySubRatings{
+    display: flex;
+    margin-top: var(--gl-spacing-0150);
+    .primarySubRating{
+        flex: 1;
+        text-align: center;
+    }
+    .averageRating{
+        display: flex;
+        position: relative;
+        align-items: baseline;
+        justify-content: center;
+        margin-bottom: 5px;
+        .icon{
+            display: inline-block;
+            width: 13px;
+            height: 13px;
+            vertical-align: text-top;
+            color: var(--gl-color-icon);
+        }
+    }
+    .label{
+        margin-left: 5px;
+        font-family: "AdihausDIN",Helvetica,Arial,sans-serif;
+        font-weight: 700;
+    }
+    .name{
+        text-transform: capitalize;
+    }
+}
+.sectionDivider{
+    margin-top: var(--gl-spacing-0150);
+    border-bottom: 1px solid #e9ecef;
+}

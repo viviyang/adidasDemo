@@ -1,0 +1,113 @@
+.dropdown{
+    display: block;
+    position: relative;
+    cursor: pointer;
+    &.open{
+        .selectIcon{
+            transform: scaleY(-1);
+        }
+    }
+    .select{
+        align-items: center;
+        -webkit-appearance: none;
+        appearance: none;
+        background: var(--gl-color-background);
+        border: 1px solid var(--gl-color-border-functional);
+        border-radius: 0;
+        color: var(--gl-color-text);
+        cursor: pointer;
+        display: flex;
+        justify-content: space-between;
+        margin: 0;
+        padding: var(--gl-spacing-0150) var(--gl-spacing-0150);
+        position: relative;
+        transition: border-color var(--gl-motion-duration-bordercolor) var(--gl-motion-easing-bordercolor);
+        width: 100%;
+        font-family: var(--gl-body-font-set-family-functional-9),var(--gl-font-family-fallback);
+        font-size: var(--gl-body-font-set-size-functional-9);
+        font-style: var(--gl-body-font-set-style-functional-9);
+        font-weight: var(--gl-body-font-set-weight-functional-9);
+        letter-spacing: var(--gl-body-font-set-letterspacing-functional-9);
+        line-height: var(--gl-body-font-set-lineheight-functional-9);
+        -webkit-text-decoration: var(--gl-body-font-set-decoration-functional-9);
+        text-decoration: var(--gl-body-font-set-decoration-functional-9);
+        text-transform: var(--gl-body-font-set-case-functional-9);
+        &:hover{
+            border-color: var(--gl-color-border-functional);
+        }
+        .label{
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+        }
+        .labelText{
+
+        }
+        .selectIcon{
+            flex-shrink: 0;
+            transition: transform var(--gl-motion-duration-transform) var(--gl-motion-easing-transform);
+            path{
+                stroke: #fff;
+            }
+        }
+    }
+}
+.open{
+    .options{
+        border-color: var(--gl-color-border-active);
+        border-top-color: var(--gl-color-border-functional);
+        opacity: 1;
+        transition: opacity var(--gl-motion-duration-opacity) var(--gl-motion-easing-opacity),visibility var(--gl-motion-duration-opacity) var(--gl-motion-easing-opacity);
+        visibility: visible;    
+    }
+}
+.options{
+    background-color: var(--gl-color-background);
+    border: 1px solid var(--gl-color-border-functional);
+    box-sizing: border-box;
+    left: 0;
+    max-height: 195px;
+    opacity: 0;
+    overflow: auto;
+    position: absolute;
+    right: 0;
+    top: 100%;
+    transform: translateY(-1px);
+    transition: opacity var(--gl-motion-duration-opacity) var(--gl-motion-easing-opacity),visibility var(--gl-motion-duration-opacity) var(--gl-motion-easing-opacity);
+    visibility: hidden;
+    width: 100%;
+    z-index: 2;
+
+    .list{
+        margin: 0;
+        padding: 0;
+    }
+    .item{
+        list-style: none;
+    }
+    .option{
+        background: none;
+        border: none;
+        border-bottom: 1px solid var(--gl-color-border-functional);
+        color: var(--gl-color-text);
+        cursor: pointer;
+        display: block;
+        margin: 0;
+        padding: var(--gl-spacing-0150) var(--gl-spacing-0150);
+        text-align: inherit;
+        transition: background-color var(--gl-motion-duration-backgroundcolor) var(--gl-motion-easing-backgroundcolor);
+        width: 100%;
+        font-family: var(--gl-body-font-set-family-functional-4),var(--gl-font-family-fallback);
+        font-size: var(--gl-body-font-set-size-functional-4);
+        font-style: var(--gl-body-font-set-style-functional-4);
+        font-weight: var(--gl-body-font-set-weight-functional-4);
+        letter-spacing: var(--gl-body-font-set-letterspacing-functional-4);
+        line-height: var(--gl-body-font-set-lineheight-functional-4);
+        -webkit-text-decoration: var(--gl-body-font-set-decoration-functional-4);
+        text-decoration: var(--gl-body-font-set-decoration-functional-4);
+        text-transform: var(--gl-body-font-set-case-functional-4);
+        &:hover{
+            background-color: var(--gl-dropdown-color-background-hover);
+        }
+    }
+}

@@ -1,0 +1,48 @@
+.comparisonBar{
+    position: relative;
+    display: block;
+    margin-top: var(--gl-spacing-0150);
+    .title{
+        // display: inline-flex;
+        text-align: left;
+        margin-bottom: 20px;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 400;
+        letter-spacing: 0px;
+        line-height: 22px;
+    }
+    .bar{
+        display: block;
+        position: relative;
+        background-color: #e9ecef;
+        height: 4px;
+        .indicator{
+            position: absolute;
+            transform: translateX(-45.5357%);
+            top: -4px;
+            left: 45.5357%;
+            border:10px solid rgba(255,255,255,0);
+            border-width: 14px 7px;
+            background-color: rgba(255,255,255,0);
+            height: auto;
+            width: 0;
+            border-top-color: #000000;
+            z-index: 3;
+        }
+    }
+    .labels{
+        display: flex;
+        justify-content: space-between;
+        margin-top: var(--gl-spacing-0100);
+        .label{
+            font-size: 12px;
+            color: var(--gl-label-color-text);
+            line-height: 16px;
+            &.active{
+                color: var(--gl-color-text);
+            }
+        } 
+    }
+    
+}

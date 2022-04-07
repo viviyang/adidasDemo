@@ -1,0 +1,38 @@
+.filters{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 5px -5px;
+    .label{
+        text-align:left;
+        line-height: 20px;
+    }
+}
+.filter{
+    margin: 5px;
+    .filterItem{
+        align-items: center;
+        background-color: var(--gl-color-background);
+        border: 1px solid var(--gl-color-border-navigational);
+        color: var(--gl-color-text);
+        cursor: pointer;
+        display: inline-flex;
+        padding: var(--gl-spacing-0100);
+        font-family: var(--gl-body-font-set-family-functional-7),var(--gl-font-family-fallback);
+        font-size: var(--gl-body-font-set-size-functional-7);
+        font-style: var(--gl-body-font-set-style-functional-7);
+        font-weight: var(--gl-body-font-set-weight-functional-7);
+        letter-spacing: var(--gl-body-font-set-letterspacing-functional-7);
+        line-height: var(--gl-body-font-set-lineheight-functional-7);
+        &:hover{
+            border-color: var(--gl-color-border-navigational-hover);
+        }
+
+        &.label::before{
+            content: attr(data-label);
+            display: block;
+            height: 0;
+            overflow: hidden;
+            visibility: hidden;
+        }
+    }
+}
