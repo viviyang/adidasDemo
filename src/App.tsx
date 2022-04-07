@@ -1,26 +1,23 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
-
-function App() {
+import './App.scss';
+import RateReview from './pages/rateReview';
+const App: React.FC = () => {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <svg width="0" height="0">
+        <symbol id="dropdown" viewBox="0 0 16 24">
+          <title>dropdown</title>
+          <path
+            fill="none"
+            stroke="currentColor"
+            strokeMiterlimit="10"
+            strokeWidth="2"
+            d="M1.5 9L8 15.5 14.5 9"
+          />
+        </symbol>
+      </svg>
+      <RateReview />
     </div>
   );
-}
-
+};
 export default App;

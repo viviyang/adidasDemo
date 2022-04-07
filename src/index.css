@@ -1,3 +1,44 @@
+:root{
+  --gl-link-font-set-family-functional-2: AdihausDIN;
+  --gl-link-font-set-size-functional-2: 16px;
+  --gl-link-font-set-style-functional-2: normal;
+  --gl-link-font-set-weight-functional-2: 400;
+  --gl-link-font-set-case-functional-2: none;
+  --gl-link-font-set-style-functional-3: normal;
+  --gl-link-font-set-letterspacing-functional-2: 0px;
+  --gl-link-font-set-lineheight-functional-2: 22px;
+  --gl-link-font-set-decoration-functional-2: underline;
+
+  --gl-body-font-set-family-functional-9: AdihausDIN;
+  --gl-body-font-set-size-functional-9: 16px;
+  --gl-body-font-set-style-functional-9: normal;
+  --gl-body-font-set-weight-functional-9: 700;
+  --gl-body-font-set-letterspacing-functional-9: 0px;
+  --gl-body-font-set-lineheight-functional-9: 22px;
+  --gl-body-font-set-decoration-functional-9: none;
+  --gl-body-font-set-case-functional-9: none;
+
+  --gl-body-font-set-size-functional-7: 16px;
+  --gl-body-font-set-style-functional-7: normal;
+  --gl-body-font-set-lineheight-functional-7: 22px;
+  --gl-color-border-navigational-hover: #767677;
+  --gl-color-border-functional: #767677;
+
+  --gl-dropdown-color-background-hover: #e9ecef;
+  
+  --gl-spacing-0150: 15px;
+  --gl-spacing-0100: 10px;
+  --gl-spacing-0400: 40px;
+  --gl-spacing-0400: 60px;
+  --gl-color-icon:#000000;
+  --gl-color-text: #000000;
+  --gl-color-transparent: rgba(255,255,255,0);
+  --gl-label-color-text: #767677;
+  --gl-color-background: #ffffff;
+  --gl-color-border-navigational: #d3d7da;
+  --gl-color-background-inverse: #000000;
+}
+
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
@@ -10,4 +51,62 @@ body {
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+button{
+  background: none;
+  border: none;
+  color: inherit;
+  font: inherit;
+  letter-spacing: inherit;
+  padding: 0;
+  text-align: inherit;
+  text-transform: inherit;
+}
+.gl-body--s {
+  font-size: 14px;
+  line-height: 20px;
+}
+.gl-link {
+  background-color: var(--gl-color-transparent);
+  color: var(--gl-color-text);
+  cursor: pointer;
+  display: inline;
+  padding-left: 1px;
+  padding-right: 1px;
+  vertical-align: bottom;
+  font-family: var(--gl-link-font-set-family-functional-2),var(--gl-font-family-fallback);
+  font-size: var(--gl-link-font-set-size-functional-2);
+  letter-spacing: var(--gl-link-font-set-letterspacing-functional-2);
+  line-height: var(--gl-link-font-set-lineheight-functional-2);
+  text-decoration: var(--gl-link-font-set-decoration-functional-2);
+  text-transform: var(--gl-link-font-set-case-functional-2)
+}
+.gl-link:hover{
+  color: #fff;
+  background-color: var(--gl-color-background-inverse);
+}
+.gl-icon {
+  color: var(--gl-color-icon);
+  display: inline-block;
+  height: 24px;
+  vertical-align: text-top;
+  width: 24px;
+}
+strong{
+  font-family: var(--gl-body-font-set-family-functional-9),var(--gl-font-family-fallback);
+  font-size: var(--gl-body-font-set-size-functional-9);
+  font-style: var(--gl-body-font-set-style-functional-9);
+  font-weight: var(--gl-body-font-set-weight-functional-9);
+  letter-spacing: var(--gl-body-font-set-letterspacing-functional-9);
+  line-height: var(--gl-body-font-set-lineheight-functional-9);
+  -webkit-text-decoration: var(--gl-body-font-set-decoration-functional-9);
+  text-decoration: var(--gl-body-font-set-decoration-functional-9);
+  text-transform: var(--gl-body-font-set-case-functional-9);
+}
+.gl-vspace-bpall-small {
+  margin-top: var(--gl-spacing-0150);
+}
+.--gl-spacing-0100{
+  margin-top: var(--gl-spacing-0150);
 }
