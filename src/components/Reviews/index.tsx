@@ -2,6 +2,7 @@ import React from 'react';
 import styles from './index.module.scss';
 import Review from './Review';
 import { ReviewProp } from '../../pages/rateReview/data';
+import { DEFAULT_SHOW_COUNT } from '../../pages/rateReview';
 import Dropdown from '../Dropdown';
 
 export interface ReviewsProp {
@@ -47,9 +48,11 @@ const Reviews: React.FC<ReviewsProp> = (props?: any) => {
                     Read more reviews
                   </button>
                 </div>
-                <div>
-                  <button className="gl-link gl-body--s">Go to filters</button>
-                </div>
+                {showCount > DEFAULT_SHOW_COUNT && (
+                  <div>
+                    <button className="gl-link gl-body--s">Go to filters</button>
+                  </div>
+                )}
               </div>
             </section>
           );

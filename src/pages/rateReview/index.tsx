@@ -5,8 +5,8 @@ import { useRequest } from 'ahooks';
 import { getReview } from './service';
 import type { ReviewQueryParams, ReviewProp } from './data';
 
+export const DEFAULT_SHOW_COUNT = 3;
 const LIMIT = 5;
-const DEFAULT_SHOW_COUNT = 3;
 const defaultQueryParam = {
   includeLocales: 'en*',
   limit: DEFAULT_SHOW_COUNT + LIMIT,
